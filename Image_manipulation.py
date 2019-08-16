@@ -1,0 +1,11 @@
+import cv2
+img=cv2.imread("1.jpg",0)
+print(type(img))
+print(img)
+print(img.shape)
+print(img.ndim)
+resize_img=cv2.resize(img,(1280,720))
+cv2.imshow("Manthan",resize_img)
+cv2.imwrite("resized_1.jpg",resize_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
